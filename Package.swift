@@ -23,7 +23,7 @@ let package = Package(
             name: "TestFiles",
             dependencies: [],
             path: "../test-files",
-            resources: [.copy("json/group1"), .copy("json/group2"), .copy("README.md")]
+            resources: [.process("json/group1"), .process("json/group2"), .copy("README.md")]
         ),
     ]
 )
