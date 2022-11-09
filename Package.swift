@@ -23,6 +23,7 @@ let package = Package(
             name: "TestFiles",
             dependencies: [],
             path: "../test-files",
+            exclude: ["Android", "some_file.yml"],
             resources: [.copy("json/group1"), .copy("json/group2"), .copy("README.md")]
         ),
     ]
