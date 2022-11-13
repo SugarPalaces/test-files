@@ -6,6 +6,7 @@ settings:
     GCC_TREAT_WARNINGS_AS_ERRORS: YES
     SWIFT_TREAT_WARNINGS_AS_ERRORS: YES
     LD_RUNPATH_SEARCH_PATHS: $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+    GENERATE_INFOPLIST_FILE: YES
 fileGroups:
   # Allow the project xcodegen definition to be edited in Xcode.
   - project.yml
