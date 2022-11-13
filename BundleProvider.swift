@@ -1,5 +1,5 @@
 import Foundation
 
 extension Bundle {
-    public static var testFiles: Bundle = .main
+    public static var testFilesMain: Bundle = .main
 }
