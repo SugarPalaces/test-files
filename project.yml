@@ -22,3 +22,4 @@ targets:
     type: framework
     sources:
       - path: json
+      - path: BundleProvider.swift
