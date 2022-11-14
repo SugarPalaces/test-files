@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03AE39882922AE100082128D /* ResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AE39872922AE100082128D /* ResourceManager.swift */; };
 		0A8E69DFA24870808EB9B0EC /* file2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EBEA345C76BFBF5B0C65A0E /* file2.json */; };
 		5FFBFAB7A25FDACA70C038B7 /* file1.json in Resources */ = {isa = PBXBuildFile; fileRef = 79C7947D77AB03348DD4A7A3 /* file1.json */; };
-		9F3D518D4C8F978B1F26B963 /* BundleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EE466100DA2A16C134191 /* BundleProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03AE39872922AE100082128D /* ResourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceManager.swift; sourceTree = "<group>"; };
 		25662269B25F90AE60D246D1 /* TestFiles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFiles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B9EE466100DA2A16C134191 /* BundleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleProvider.swift; sourceTree = "<group>"; };
 		5EBEA345C76BFBF5B0C65A0E /* file2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file2.json; sourceTree = "<group>"; };
 		79C7947D77AB03348DD4A7A3 /* file1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file1.json; sourceTree = "<group>"; };
 		C631EDBF61DE4F7A370229D1 /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		FF0C082F7781982BA7311A61 = {
 			isa = PBXGroup;
 			children = (
-				3B9EE466100DA2A16C134191 /* BundleProvider.swift */,
+				03AE39872922AE100082128D /* ResourceManager.swift */,
 				C631EDBF61DE4F7A370229D1 /* project.yml */,
 				6948994E3DAB2275BBFB2436 /* json */,
 				785B873052121B61AC9E86F4 /* Products */,
@@ -90,8 +90,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 6C457B3D981D81BD46D0EDC5 /* Build configuration list for PBXProject "TestFiles" */;
 			compatibilityVersion = "Xcode 11.0";
@@ -127,7 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F3D518D4C8F978B1F26B963 /* BundleProvider.swift in Sources */,
+				03AE39882922AE100082128D /* ResourceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +201,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,7 +292,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
